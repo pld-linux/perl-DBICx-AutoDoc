@@ -9,7 +9,7 @@ Summary:	DBICx::AutoDoc - Generate automatic documentation of DBIx::Class::Schem
 Summary(pl.UTF-8):	DBICx::AutoDoc - generuje automatycznie dokumentacje objektów DBIx::Class::Schema
 Name:		perl-DBICx-AutoDoc
 Version:	0.07
-Release:	1
+Release:	2
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/J/JA/JASONK/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -69,6 +69,8 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/DBICx/*.pm
 %dir %{perl_vendorlib}/DBICx/AutoDoc
 %{perl_vendorlib}/DBICx/AutoDoc/*pm
+%dir %{perl_vendorlib}/auto/share/dist
+%dir %{perl_vendorlib}/auto/share/dist/DBICx-AutoDoc
 %{perl_vendorlib}/auto/share/dist/DBICx-AutoDoc/*tt2
 %{perl_vendorlib}/auto/share/dist/DBICx-AutoDoc/AUTODOC*
 %{perl_vendorlib}/auto/share/dist/DBICx-AutoDoc/*css
