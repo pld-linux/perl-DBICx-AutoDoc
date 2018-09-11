@@ -1,15 +1,15 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	DBICx
 %define	pnam	AutoDoc
+%include	/usr/lib/rpm/macros.perl
 Summary:	DBICx::AutoDoc - Generate automatic documentation of DBIx::Class::Schema objects
 Summary(pl.UTF-8):	DBICx::AutoDoc - generuje automatycznie dokumentacje objektów DBIx::Class::Schema
 Name:		perl-DBICx-AutoDoc
 Version:	0.07
-Release:	2
+Release:	3
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/J/JA/JASONK/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -69,7 +69,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/DBICx/*.pm
 %dir %{perl_vendorlib}/DBICx/AutoDoc
 %{perl_vendorlib}/DBICx/AutoDoc/*pm
-%dir %{perl_vendorlib}/auto/share/dist
 %dir %{perl_vendorlib}/auto/share/dist/DBICx-AutoDoc
 %{perl_vendorlib}/auto/share/dist/DBICx-AutoDoc/*tt2
 %{perl_vendorlib}/auto/share/dist/DBICx-AutoDoc/AUTODOC*
