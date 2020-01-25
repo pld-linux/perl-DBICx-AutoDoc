@@ -4,7 +4,6 @@
 
 %define	pdir	DBICx
 %define	pnam	AutoDoc
-%include	/usr/lib/rpm/macros.perl
 Summary:	DBICx::AutoDoc - Generate automatic documentation of DBIx::Class::Schema objects
 Summary(pl.UTF-8):	DBICx::AutoDoc - generuje automatycznie dokumentacje objektów DBIx::Class::Schema
 Name:		perl-DBICx-AutoDoc
